@@ -278,6 +278,12 @@ public class Configuration {
     public static class Advanced {
         @TomlComment({"Custom channel ID for server specific messages (like Join/leave)", "Leave 'default' to use default channel"})
         public String serverChannelID = "default";
+        
+        @TomlComment({"Custom channel ID for start/stop messages", "Leave 'default' to use default channel"})
+        public String startStopChannelID = "default";
+        
+        @TomlComment({"Custom channel ID for join/leave messages", "Leave 'default' to use default channel"})
+        public String joinLeaveChannelID = "default";
 
         @TomlComment({"Custom channel ID for death messages", "Leave 'default' to use default channel"})
         public String deathsChannelID = "default";
